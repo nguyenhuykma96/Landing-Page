@@ -105,3 +105,10 @@
   font-weight: normal;
   src: local("SFProText-Light"), url("SFProText-Light.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "SFProText-Heavy";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SFProText-Heavy"), url("SFProText-Heavy.ttf") format("truetype");
+}

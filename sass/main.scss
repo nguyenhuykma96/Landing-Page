@@ -40,6 +40,9 @@ body {
     }
     &-item {
       margin-right: 70px;
+      a {
+        color: $color-text;
+      }
     }
   }
 }
@@ -173,6 +176,7 @@ body {
   &__title {
     @include flex(flex, column, center, center);
     padding: 100px 0;
+    text-align: center;
     h2 {
       font-size: 4.4rem;
       span {
@@ -280,6 +284,224 @@ body {
           font-size: 24px;
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  p {
+    font-size: 2.4rem;
+    font-family: "SFProText-Light", sans-serif;
+  }
+  .header {
+    &__logo {
+      img {
+        width: 72px;
+        height: 72px;
+      }
+    }
+    &__menu {
+      &-item {
+        &:last-child {
+          margin-right: 40px;
+        }
+        a {
+          font-size: 2.4rem;
+        }
+      }
+    }
+  }
+  .slider {
+    padding-top: 85px;
+    &__content {
+      padding-top: unset;
+      h1 {
+        font-family: "SFProText-Heavy", sans-serif;
+        font-size: 4.4rem;
+        line-height: 55px;
+      }
+      p {
+        margin-bottom: 50px;
+      }
+    }
+  }
+  .features {
+    &__head {
+      max-width: 80%;
+      h2 {
+        margin-bottom: 25px;
+      }
+      p {
+        font-size: 24px;
+        line-height: 36px;
+        font-family: "SFProText-Light", sans-serif;
+      }
+    }
+    &__item {
+      max-width: 78%;
+      margin: 0 auto;
+      img {
+        height: 110px;
+        width: 110px;
+      }
+      h2 {
+        font-size: 3.2rem;
+      }
+      p {
+        font-size: 24px;
+        line-height: 36px;
+      }
+    }
+  }
+  .introduce {
+    height: 100%;
+    background-position: left top;
+    .phone-hoz {
+      width: 85%;
+      margin: 0 auto;
+      top: -70px;
+    }
+    &__reverse {
+      flex-direction: column-reverse;
+    }
+    &__right {
+      padding-top: 150px;
+      h2 {
+        font-family: "Myriad Pro Bold", sans-serif;
+      }
+      .btn-download {
+        margin: 55px auto;
+      }
+    }
+    &__left {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 140px;
+      img {
+        padding-left: 40px;
+      }
+    }
+  }
+  .description {
+    &__title {
+      h2 {
+        margin-bottom: 20px;
+      }
+      span {
+        font-family: "Myriad Pro Bold", sans-serif;
+      }
+    }
+    &__content {
+      &__img {
+        padding-bottom: 50px;
+      }
+      &__left {
+        text-align: center;
+      }
+      &__item {
+        align-items: center;
+        h2 {
+          font-size: 3.2rem;
+          font-family: "SFProText-Heavy", sans-serif;
+        }
+        p {
+          max-width: 70%;
+        }
+      }
+      &__right {
+        text-align: center;
+        .align-left {
+          align-items: center;
+        }
+      }
+    }
+  }
+  .img-order {
+    order: -1;
+  }
+  .footer {
+    height: auto;
+    &__img {
+      position: unset;
+      display: flex;
+      justify-content: center;
+      padding-top: 85px;
+      padding-bottom: 150px;
+    }
+    p {
+      line-height: 36px;
+    }
+    &__content {
+      h2 {
+        font-family: "Myriad Pro Bold", sans-serif;
+      }
+    }
+    &__download {
+      justify-content: center;
+    }
+  }
+}
+@media screen and (max-width: 767.9px) {
+  .header {
+    height: 150rem;
+    &__menu {
+      &-item {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  .features__item {
+    max-width: 100%;
+    padding: 30px 14px;
+  }
+  .features__head {
+    max-width: 100%;
+  }
+  .slider__img {
+    padding-top: 50px;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  .header {
+    height: 160rem;
+    &__row {
+      justify-content: space-around;
+    }
+    &__menu {
+      .btn-download {
+        display: none;
+      }
+      &-item {
+        // margin-right: 10px;
+      }
+    }
+  }
+  .description__content__item p {
+    max-width: 85%;
+  }
+
+  .introduce {
+    .phone-hoz {
+      top: -35px;
+    }
+  }
+  .footer__download {
+    flex-direction: column;
+    .btn-googleStore {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  }
+  .footer {
+    p {
+      line-height: 24px;
+    }
+  }
+  .footer__bottom {
+    p {
+      font-size: 16px;
     }
   }
 }

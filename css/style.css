@@ -53,6 +53,9 @@ body {
 .header__menu-item {
   margin-right: 70px;
 }
+.header__menu-item a {
+  color: #ffffff;
+}
 
 .btn-download {
   display: flex;
@@ -189,6 +192,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 100px 0;
+  text-align: center;
 }
 .description__title h2 {
   font-size: 4.4rem;
@@ -306,6 +310,205 @@ body {
 .footer__download .btn-download .btn-text-bold {
   font-family: "Myriad Pro Bold", sans-serif;
   font-size: 24px;
+}
+
+@media screen and (max-width: 992px) {
+  p {
+    font-size: 2.4rem;
+    font-family: "SFProText-Light", sans-serif;
+  }
+
+  .header__logo img {
+    width: 72px;
+    height: 72px;
+  }
+  .header__menu-item:last-child {
+    margin-right: 40px;
+  }
+  .header__menu-item a {
+    font-size: 2.4rem;
+  }
+
+  .slider {
+    padding-top: 85px;
+  }
+  .slider__content {
+    padding-top: unset;
+  }
+  .slider__content h1 {
+    font-family: "SFProText-Heavy", sans-serif;
+    font-size: 4.4rem;
+    line-height: 55px;
+  }
+  .slider__content p {
+    margin-bottom: 50px;
+  }
+
+  .features__head {
+    max-width: 80%;
+  }
+  .features__head h2 {
+    margin-bottom: 25px;
+  }
+  .features__head p {
+    font-size: 24px;
+    line-height: 36px;
+    font-family: "SFProText-Light", sans-serif;
+  }
+  .features__item {
+    max-width: 78%;
+    margin: 0 auto;
+  }
+  .features__item img {
+    height: 110px;
+    width: 110px;
+  }
+  .features__item h2 {
+    font-size: 3.2rem;
+  }
+  .features__item p {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .introduce {
+    height: 100%;
+    background-position: left top;
+  }
+  .introduce .phone-hoz {
+    width: 85%;
+    margin: 0 auto;
+    top: -70px;
+  }
+  .introduce__reverse {
+    flex-direction: column-reverse;
+  }
+  .introduce__right {
+    padding-top: 150px;
+  }
+  .introduce__right h2 {
+    font-family: "Myriad Pro Bold", sans-serif;
+  }
+  .introduce__right .btn-download {
+    margin: 55px auto;
+  }
+  .introduce__left {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 140px;
+  }
+  .introduce__left img {
+    padding-left: 40px;
+  }
+
+  .description__title h2 {
+    margin-bottom: 20px;
+  }
+  .description__title span {
+    font-family: "Myriad Pro Bold", sans-serif;
+  }
+  .description__content__img {
+    padding-bottom: 50px;
+  }
+  .description__content__left {
+    text-align: center;
+  }
+  .description__content__item {
+    align-items: center;
+  }
+  .description__content__item h2 {
+    font-size: 3.2rem;
+    font-family: "SFProText-Heavy", sans-serif;
+  }
+  .description__content__item p {
+    max-width: 70%;
+  }
+  .description__content__right {
+    text-align: center;
+  }
+  .description__content__right .align-left {
+    align-items: center;
+  }
+
+  .img-order {
+    order: -1;
+  }
+
+  .footer {
+    height: auto;
+  }
+  .footer__img {
+    position: unset;
+    display: flex;
+    justify-content: center;
+    padding-top: 85px;
+    padding-bottom: 150px;
+  }
+  .footer p {
+    line-height: 36px;
+  }
+  .footer__content h2 {
+    font-family: "Myriad Pro Bold", sans-serif;
+  }
+  .footer__download {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 767.9px) {
+  .header {
+    height: 150rem;
+  }
+  .header__menu-item {
+    margin-right: 20px;
+  }
+
+  .features__item {
+    max-width: 100%;
+    padding: 30px 14px;
+  }
+
+  .features__head {
+    max-width: 100%;
+  }
+
+  .slider__img {
+    padding-top: 50px;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  .header {
+    height: 160rem;
+  }
+  .header__row {
+    justify-content: space-around;
+  }
+  .header__menu .btn-download {
+    display: none;
+  }
+  .description__content__item p {
+    max-width: 85%;
+  }
+
+  .introduce .phone-hoz {
+    top: -35px;
+  }
+
+  .footer__download {
+    flex-direction: column;
+  }
+  .footer__download .btn-googleStore {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .footer p {
+    line-height: 24px;
+  }
+
+  .footer__bottom p {
+    font-size: 16px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
