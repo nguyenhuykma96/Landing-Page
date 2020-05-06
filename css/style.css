@@ -67,6 +67,10 @@ body {
   width: 170px;
   height: 48px;
 }
+.btn-download:hover {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  transition: 0.25s;
+}
 
 .slider__content {
   padding-top: 85px;
@@ -271,6 +275,37 @@ body {
 .footer__bottom p {
   color: #9dd4ff;
   font-family: "SFProText-Light", sans-serif;
+}
+.footer__download {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.footer__download .btn-googleStore {
+  border: 3px solid #ffffff;
+  margin-left: 30px;
+}
+.footer__download .btn-download {
+  height: 70px;
+  width: 270px;
+  border-radius: 35px;
+}
+.footer__download .btn-download:hover {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s;
+}
+.footer__download .btn-download .btn-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 20px;
+}
+.footer__download .btn-download .btn-text-bold {
+  font-family: "Myriad Pro Bold", sans-serif;
+  font-size: 24px;
 }
 
 /*# sourceMappingURL=style.css.map */

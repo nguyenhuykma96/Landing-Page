@@ -52,6 +52,10 @@ body {
   font-size: 1.6rem;
   width: 170px;
   height: 48px;
+  &:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    transition: 0.25s;
+  }
 }
 .slider {
   &__content {
@@ -251,6 +255,31 @@ body {
     p {
       color: #9dd4ff;
       font-family: "SFProText-Light", sans-serif;
+    }
+  }
+  &__download {
+    margin-top: 70px;
+    @include flex(flex, row, flex-start, center);
+    .btn-googleStore {
+      border: 3px solid $color-text;
+      margin-left: 30px;
+    }
+    .btn-download {
+      height: 70px;
+      width: 270px;
+      border-radius: 35px;
+      &:hover {
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s;
+      }
+      .btn-text {
+        @include flex(flex, column, center, flex-start);
+        margin-left: 20px;
+        &-bold {
+          font-family: "Myriad Pro Bold", sans-serif;
+          font-size: 24px;
+        }
+      }
     }
   }
 }
