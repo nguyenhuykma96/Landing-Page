@@ -1,0 +1,44 @@
+// 1. COLOR
+$color-text: #ffffff !default;
+$color-text-dark: #2b2b2b !default;
+$color-green-dark: #004fb9 !default;
+
+// 2. MIXIN
+
+@mixin text-ellipsis() {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+@mixin flex-center($display: flex) {
+  display: $display;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+@mixin ellipsis-text($display: flex) {
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: pre;
+}
+
+@mixin flex(
+  $display: flex,
+  $flex-direction: row,
+  $justify-content: center,
+  $align-item: center
+) {
+  display: $display;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+  align-items: $align-item;
+}
+
+@mixin transition($properties, $duration: 0.3s, $delay: 0s) {
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  transition-property: $properties;
+  transition-duration: $duration;
+  transition-delay: $delay;
+}
