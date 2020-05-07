@@ -255,6 +255,7 @@ body {
 }
 .footer__content p {
   line-height: 28px;
+  max-width: 76%;
 }
 .footer__img {
   position: absolute;
