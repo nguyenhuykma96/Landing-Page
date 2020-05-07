@@ -23,7 +23,7 @@ body {
 }
 
 .header {
-  background-image: url("/img/slider.png");
+  background-image: url("../../img/slider.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -151,7 +151,7 @@ body {
 }
 
 .introduce {
-  background-image: url("/img/background-2.png");
+  background-image: url("../../img/background-2.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -234,7 +234,7 @@ body {
 }
 
 .footer {
-  background-image: url("/img/bg-footer.png");
+  background-image: url("../../img/bg-footer.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
