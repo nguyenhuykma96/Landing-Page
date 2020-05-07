@@ -140,6 +140,10 @@ body {
 .features__item:hover h2 {
   color: #004fb9;
 }
+.features__item img {
+  width: 50px;
+  height: 50px;
+}
 .features__item h2 {
   font-size: 2.4rem;
   font-family: "SFProText-Bold", sans-serif;
