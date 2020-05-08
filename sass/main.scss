@@ -32,6 +32,7 @@ body {
   &__row {
     @include flex(flex, row, space-between, center);
     padding-top: 25px;
+    flex-wrap: nowrap;
   }
   &__menu {
     @include flex(flex, row, flex-end, center);
@@ -60,6 +61,7 @@ body {
     transition: 0.25s;
   }
 }
+
 .slider {
   &__content {
     padding-top: 85px;
@@ -471,6 +473,9 @@ body {
     &__menu {
       &-item {
         margin-right: 20px;
+        &:last-child {
+          margin-right: 20px;
+        }
       }
     }
   }
@@ -697,6 +702,16 @@ body {
 }
 
 @media screen and (max-width: 374px) {
+  .header {
+    &__menu {
+      &-item {
+        margin-right: 15px;
+        &:last-child {
+          margin-right: 15px;
+        }
+      }
+    }
+  }
   .slider__img img {
     max-width: 115%;
   }

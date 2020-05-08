@@ -37,6 +37,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-top: 25px;
+  flex-wrap: nowrap;
 }
 .header__menu {
   display: flex;
@@ -483,6 +484,9 @@ body {
   .header__menu-item {
     margin-right: 20px;
   }
+  .header__menu-item:last-child {
+    margin-right: 20px;
+  }
 
   .features {
     margin-bottom: 170px;
@@ -714,6 +718,13 @@ body {
   }
 }
 @media screen and (max-width: 374px) {
+  .header__menu-item {
+    margin-right: 15px;
+  }
+  .header__menu-item:last-child {
+    margin-right: 15px;
+  }
+
   .slider__img img {
     max-width: 115%;
   }
